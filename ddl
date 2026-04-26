@@ -1,0 +1,26 @@
+CREATE TABLE IF NOT EXISTS public.batting
+(
+    playerid varchar(10) NOT NULL,
+    yearid integer NOT NULL,
+    stint integer NOT NULL,
+    teamid varchar(3) NOT NULL,
+    lgid varchar(3),
+    g integer,
+    ab integer,
+    r integer,
+    h integer,
+    doubles integer,
+    triples integer,
+    hr integer,
+    rbi integer,
+    sb integer,
+    cs integer,
+    bb integer,
+    so integer,
+    ibb integer,
+    hbp integer,
+    sh integer,
+    sf integer,
+    gidp integer,
+    CONSTRAINT pk_batting PRIMARY KEY (playerid, yearid, stint)
+);

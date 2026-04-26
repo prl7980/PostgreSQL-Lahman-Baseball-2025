@@ -1,0 +1,1 @@
+copy "Batting" from '/path/to/Batting.csv' with csv header;
